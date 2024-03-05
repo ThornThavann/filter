@@ -1,0 +1,422 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  float: left;
+  position: sticky;
+
+
+}
+.logo{
+  display: flex;
+  color: #fff;
+  margin-top: 3%;
+  transition: 0.5s ease;
+  
+}
+.logo img{
+  margin-top: -20px;
+}
+.logo img:hover{
+  transform: scale(1.1);
+}
+.menu{
+  width: 100%;
+  height: auto;
+  float: right;
+}
+.menu ul{
+  float: right;
+  margin-right:150px ;
+  margin-top: -25px; 
+
+}
+.menu ul li{
+display: inline-block;
+} 
+.menu ul li a{
+  color: white;
+  font-size: 22px;
+ font-family: 'Plus Jakarta Sans', sans-serif;
+ text-decoration: none;
+ padding: 0px 30px;
+ transition: 0.3s ease; 
+
+}
+.menu ul li a:hover{
+border-bottom: 2px solid white ;
+border-radius: 25px;
+box-shadow: 0px 0px 20px;
+padding: 15px 25px;
+}
+.menu ul li .active{
+  color: white;
+}
+#check{
+  display: none;
+}
+label, #checkbtn
+label, #cancel{
+  font-size: 2rem;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  
+}
+@media screen and (max-width:600px){
+  .menu ul li{
+      line-height: 3rem;
+      margin-top: 50px;
+      display: block;
+      text-align: start;
+  }
+  ul{
+     position: fixed;
+      width: 100%;
+      height: 40vh;
+      background-color: rgb(60, 60, 61);
+      left: -115%;
+      top: 16%;
+      transition: all 0.5s;
+  }
+  #check:checked ~ ul{
+      left: 0;
+  }
+  label, #checkbtn
+  label, #cancel{
+      display: flex;
+      margin-top: 15px;
+  }
+  label, #cancel:hover{
+      display: flex;
+  }
+  .logo img {
+      margin-top: 20px;
+  }
+
+
+}
+
+
+
+.bloo{
+  width: 100%;
+  height: 600px;
+  /* background-color: violet; */
+  
+}
+
+#road{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin-left:15% ;
+    display: flex;
+    gap: 10%;
+  } 
+  /* #road img{
+    margin-top: 8%;
+    width: 80%;
+    margin-left: 2%;
+    object-fit: cover;
+   
+  } */
+
+
+.text1{
+  width: 100%;
+  height: 100px;
+  margin-left: 1%;
+}
+
+.h{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  float: left;
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+  color: black;
+}
+.h1{
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  float: left;
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+
+  color: black;
+
+}
+.h1 p{
+  margin-right: 40px;
+}
+.p{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  font-size: 20px;
+}
+
+  #mountain{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin-left: 15%;
+    display: flex;
+    gap: 10%;
+  } 
+  /* #mountain img{
+    margin-top: 8%;
+    width: 75%;
+    margin-left: 10%;
+    object-fit: cover;
+   
+  } */
+
+  #electric{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin-left: 15%;
+    display: flex;
+    gap: 10%;
+  } 
+  /* #electric img{
+    margin-top: 8%;
+    width: 80%;
+    margin-left: 10%;
+    object-fit: cover;
+   
+  } */
+  /* .pic2{
+    width: 31%
+    
+  } */
+
+  #MMX{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin-left: 30%;
+    display: flex;
+    gap: 10%;
+  } 
+  /* #MMX img{
+    margin-top: 8%;
+    width: 60%;
+    margin-left: 10%;
+    object-fit: cover;
+   
+  } */
+  .bloo1{
+    width: 100%;
+    height: 600px;
+    /* background-color: violet; */
+    
+  }
+
+
+  .image-box{
+    width: 100%;
+    height: 890px;
+    background-image: url(back.webp);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+
+}
+.text3{
+    width: 40%;
+    height: 60%;
+
+    margin-left: 100px;
+    color:white;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+
+.image-box button{
+    width: 250px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 20px;
+
+}
+.image-box button:hover{
+    background-color: rgb(163, 9, 209);
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0px 0px 25px;
+
+
+}
+.box{
+    width: 100%;
+    height: 250px;
+    background-color:black;
+    position: absolute;
+   top: 890px;
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    color: aliceblue;
+    font-size: 25px;
+ 
+
+
+}
+.box-1{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 1100px;
+  
+
+
+}
+
+
+.custom-shape-divider-bottom-1707882186 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-bottom-1707882186 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 105px;
+ 
+}
+
+.custom-shape-divider-bottom-1707882186 .shape-fill {
+    fill: #000000;
+}
+  
+
+.footer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: black;
+  margin: auto;
+}
+.img-box {
+  background-image: url(Rectangle\2\(1\).svg);
+  background-position: center;
+  height: 1000px;
+  width: 100%;
+  object-fit: cover;
+
+  background-size: cover;
+}
+.txt {
+  width: 40%;
+  height: 60%;
+  margin-left: 100px;
+  color: white;
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+}
+.img-box button {
+  width: 250px;
+  height: 55px;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.txt2 {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.txt2 p {
+  color: white;
+  font-size: 20px;
+}
+.txt3 {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.txt3 p {
+  color: white;
+  font-size: 20px;
+}
+@media all and (max-width: 712px) {
+  .txt1 h1 {
+    font-size: 3rem;
+    margin-left: -30px;
+    width: 100%;
+    display: block;
+    width: 400px;
+    margin-top: 250px;
+  }
+  .txt1 p {
+    font-size: 1.5rem;
+    margin-left: -30px;
+    margin-top: 40px;
+  }
+  .img-box button {
+    margin-left: -30px;
+    width: 200px;
+    height: 50px;
+  }
+}
+@media all and (max-width: 712px) {
+  .txt2 {
+    flex-direction: column;
+  }
+  .txt3 {
+    margin-top: 100px;
+  }
+}
+@media all and (max-width: 712px) {
+  .txt1 button {
+    font-size: 15px;
+    height: 70px;
+    width: 200px;
+    margin-top: 150px;
+  }
+}
